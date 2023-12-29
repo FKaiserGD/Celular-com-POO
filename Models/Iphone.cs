@@ -1,0 +1,22 @@
+namespace DesafioPOO.Models
+{
+    // Herda da classe "Smartphone"
+    public class Iphone : Smartphone
+    {
+        // Construtor que chama o construtor da classe base
+        public Iphone(string numero) : base(numero)
+        {
+        }
+
+        // Sobrescreve o método InstalarAplicativo
+        public override void InstalarAplicativo(string nomeApp)
+        {
+            Console.WriteLine($"* Instalando {nomeApp} no iPhone...");
+        }
+
+        public override void AplicativoInstalado(string nomeApp)
+        {
+            Console.WriteLine($"* {nomeApp} Instalado com Sucesso!");
+        }
+    }
+}
